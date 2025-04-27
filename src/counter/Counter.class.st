@@ -38,3 +38,9 @@ Counter >> initialize [
  c := 10.
  ^self	
 ]
+
+{ #category : 'printing' }
+Counter >> printOn: aStream [
+aStream nextPutAll: ' with value: ', c printString.
+
+]
